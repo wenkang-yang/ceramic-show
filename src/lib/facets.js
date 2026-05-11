@@ -218,5 +218,6 @@ export function truncate(text, length = 28) {
 
 export function relicImageUrl(filename) {
   if (!filename) return null;
-  return `/images/relics/${encodeURIComponent(filename)}`;
+  const base = import.meta.env.BASE_URL;
+  return `${base}images/relics/${encodeURIComponent(filename)}`;
 }

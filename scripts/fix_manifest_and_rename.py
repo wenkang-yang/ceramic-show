@@ -89,8 +89,8 @@ def main():
             f"已解析序号: {sorted(serial_ext)}"
         )
 
-    prefix = "陶瓷器物图片分类卡片版"
-    new_manifest = [f"{prefix}_{i}{serial_ext[i]}" for i in range(1, 64)]
+    # ASCII 文件名，避免 GitHub Pages / 部分浏览器对中文路径编码不一致
+    new_manifest = [f"relic-{i:03d}{serial_ext[i]}" for i in range(1, 64)]
 
     # Remove old files in folder that won't be kept
     keep = set(new_manifest)

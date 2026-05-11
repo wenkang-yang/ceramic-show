@@ -1,7 +1,7 @@
 """
 从《依据》内《陶瓷器物图片分类卡片版》按单元格提取嵌入图，序号取自单元格内「原图序号：N」，
 若无该文案则回退为 Word 绘图属性 name="Picture N"（与文档内 1–63 张图一致）。
-输出文件名前缀为「陶瓷器物图片分类卡片版」（与 relicImageFiles.json 一致）。
+输出文件名与 relicImageFiles.json 一致（当前为 relic-001.ext 等 ASCII 名）。
 """
 import json
 import re

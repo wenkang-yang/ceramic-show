@@ -1,0 +1,26 @@
+中国文物陶瓷分类体系可视化 — 项目包说明
+========================================
+
+本文件夹为可独立使用的完整工程（与「cursor版」并列，内容已对齐）。
+
+使用前请在本目录执行：
+  npm install
+
+开发预览：
+  npm run dev
+  或双击「开发模式启动.bat」
+
+本地预览构建结果（静态页）：
+  npm run build
+  npm run preview
+  或双击「一键打开网站.bat」
+
+依据与数据：
+  Word 原件仅在「依据」文件夹内；从依据生成数据与图片：
+  npm run data:from-yiju
+  npm run images:from-yiju
+  （需安装 Python 及 python-docx、lxml 等脚本依赖）
+
+说明文档：使用说明_README.md
+
+注意：未包含 node_modules 与 dist，需自行 npm install / npm run build。
